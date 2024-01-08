@@ -1,0 +1,64 @@
+/* Basic styles, you can expand upon these */
+
+/* Styles for the About section */
+.about-section {
+    padding: 50px 0;
+    text-align: center;
+    background-image: url('../assets/images/tour.jpg'); /* Replace 'path_to_your_image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #000; /* Adjust text color for better readability */
+    filter: saturate(0.5);
+  }
+  
+  .about-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    padding: 20px;
+  }
+  
+  .about-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.5em;
+    line-height: 1.6;
+  }
+  
+  .about-section span {
+    color: #ff6600;
+    font-weight: bold;
+  }
+  
+  .about-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .about-section ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Animation for the text typing effect */
+  .about-section p {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    animation: typing 3s steps(40) forwards;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+      font-size: 1.3em;
+    }
+  }
+  
