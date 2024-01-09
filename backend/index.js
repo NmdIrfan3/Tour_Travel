@@ -17,6 +17,10 @@ const corsOptions={
   credentials:true
 }
 
+app.get('/favicon.ico', (req, res) => {
+  res.status(204).end(); // Sending a No Content response
+});
+
 //Database Connection
 mongoose.set("strictQuery", false);
 const connect = async () => {
